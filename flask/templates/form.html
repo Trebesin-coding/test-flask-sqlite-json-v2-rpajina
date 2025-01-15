@@ -4,16 +4,19 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
+        <link rel="stylesheet" href="/static/style.css">
     </head>
     <body>
         <form method="GET">
-            <h1>Recenze</h1>
+            <h1 id="nadpis">Recenze</h1>
             <label for="recenze">Recenze: </label><input
+                name="recenze"
                 type="text"
                 autocomplete="off"
                 placeholder="Napiš recenzi"
                 autofocus />
-            <p>Recenze uživatele ... </p> 
+            <p >Recenze uživatele: {{recenze}} </p> 
+            <button type="submit">Odeslat</button>
             <!-- Místo tří teček by se mělo doplnit recenzi, kterou odeslal uživatel ve formuláři -->
     </body>
 </html>

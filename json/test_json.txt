@@ -1,3 +1,7 @@
 1. Z jakého programovacího jazyku původně vychází JSON? V jakých programovacích jazycích se dnes pracuje s JSON?
 2. Jaké má JSON využití?
 3. Jak vypadá JSON? Čemu je struktura podobná?
+
+1. json vychazi z javascriptu, ale dnes se s nim da pracovat skoro vsude, napr v pythonu
+2. json se vyuziva pro zapis dat a jejich posilani prez api
+3. json vypada jako mnoho dictionaries a listu v jednom, je to pomerne prehledny a jednoduchy zapis dat jak pro cloveka tak pro pocitac
