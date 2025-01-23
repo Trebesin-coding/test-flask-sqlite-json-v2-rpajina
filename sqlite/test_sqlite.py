@@ -13,15 +13,20 @@ int_hodnoceni = int(input("Hodnocení filmu ?/10: "))
 
 # Oprav vytváření tabulky - hodnocení je číselné
 cursor.execute(
-    'CREATE TABLE IF NOT EXISTS hodnoceni (id INTEGER PRIMARY KEY,nazev_filmu,hodnoceni INTEGER)'
+    "CREATE TABLE IF NOT EXISTS hodnoceni (id INTEGER PRIMARY KEY,nazev_filmu,hodnoceni INTEGER)"
 )
+
+# Hodnocení: u nazev_filmu chybí datový typ
 
 # Zapsání do databáze
 
 # tady by měl vepsat hodnocení do databáze - není potřeba využívat input, stačí zapsat statický údaj
 # cursor.???
 
-cursor.execute('INSERT INTO hodnoceni (nazev_filmu, hodnoceni) VALUES (?,?)', (int_film, int_hodnoceni))
+cursor.execute(
+    "INSERT INTO hodnoceni (nazev_filmu, hodnoceni) VALUES (?,?)",
+    (int_film, int_hodnoceni),
+)
 
 connection.commit()
 
